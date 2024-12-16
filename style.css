@@ -1,0 +1,403 @@
+html {
+    scroll-behavior: smooth;
+}  
+html, body {
+    height: 220%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, rgba(135, 206, 235, 0.7), rgba(255, 255, 255, 0.3));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    scroll-behavior: smooth;
+}
+/* Header styling */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 100px;
+    gap: 20px;/
+}
+/* Header logo and title styling */
+.header img {
+    width: 90px;
+    height: 90px;
+    border-radius: 30px;
+}
+.header h1 {
+    font-weight: 150%;
+    color: black;
+    padding: 30px;
+}
+/* image and constitulearn*/
+.header-left {
+    display: flex;
+    align-items: center;
+}
+/* Header navigation list */
+.header ul {
+    font-size: 130%;
+    display: flex;
+    list-style-type: none;
+    gap: 20px; /* Add gap between list items */
+    margin: 0;
+    padding: 0;
+}
+/* Styling for list items */
+.header li {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    cursor: pointer;
+}
+/* Link styling: make all links white by default */
+.header li a:link, 
+.header li a:visited {
+    color: black; 
+    text-decoration: none;
+}
+/* Hover and active states for links */
+.header li a:hover, 
+.header li a:active {
+    color: red;
+    text-decoration: underline;
+}
+/* Signup button styles */
+.signup button {
+    color: white;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(239, 10, 10);
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* signup button hover*/
+.signup button:hover {
+    background-color: rgb(200, 10, 10);
+    text-decoration: underline;
+}
+/* Search bar styles */
+.search {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Add space between the input and the button */
+    padding: 5px;
+    border-radius: 15px;
+    background: powderblue;
+}
+/*Search button box*/
+.search input {
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+/*search button */
+.search button {
+    padding: 12px;
+    cursor: pointer;
+    background-color: rgb(239, 10, 10);
+    color: white;
+    border: none;
+    border-radius: 25px;
+}
+/*search button hover*/
+.search button:hover {
+    background-color: rgb(200, 10, 10);
+    text-decoration: underline;
+}
+/* Welcome section styles */
+.welcome {
+    font-weight: bold;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 20px;
+}
+/* Start button styling */
+.start-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+/*start button*/
+.start {
+    width: 150px;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+/*start button hover*/
+.start-button button:hover {
+    background-color: rgb(3, 3, 162);
+}
+/* explore the three mojor components of constitution */
+.parts {
+    color: black;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+/*all three boxes*/
+.boxes {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+/*legislature,executive,judiciary*/
+.box {
+    background-color: rgb(245, 245, 245);
+    border: 2px solid rgb(204, 204, 204);
+    border-radius: 10px;
+    padding: 20px;
+    width: 255px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgb(0,0,0,0.2);
+    transition: all 0.2s ease, height 0.2s ease;
+}
+/*image of three part*/
+.box img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 2px solid rgb(51, 51, 51);
+}
+/*hover on boxes*/
+.box:hover {
+    width: 270;
+    background-color: rgb(240, 240, 240);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/*Name of the part*/
+.box h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: rgb(51, 51, 51);
+}
+/*small desription of the part*/
+.box h2 {
+    font-size: 14px;
+    color: rgb(85, 85, 85);
+}
+/*horizontal line*/
+hr {
+    border: 1.5px solid black;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+/*courses*/
+.courses {
+    font-size: large;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding: 15px;
+    text-decoration: underline;
+}
+/*style of all major courses*/
+.cou-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+/*style of course box*/
+.course-box {
+    background-color: rgb(245, 245, 245);
+    border: 2px solid rgb(204, 204, 204);
+    border-radius: 20px;
+    padding: 20px;
+    width: 300px;
+    height: 450px;
+    text-align: center;
+    box-shadow: 0 6px 8px rgb(0,0,0,0.3);
+    transition: all 0.2s ease, height 0.2s ease;
+}
+/*image of courses available*/
+.course-box img {
+    width: 200px;
+    border-radius: 30px;
+}
+/*courses box hover*/
+.course-box:hover {
+    width: 320;
+}
+/*course image hover*/
+.course-box img:hover {
+    width: 210px;
+}
+/*style of name of courses available*/
+.cou-box h2 {
+    font-size: 160%;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+}
+/*style of sub courses available in particular course*/
+.cou-box ul {
+    font-weight: 100;
+    font-size: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    list-style-type: none;
+    text-align: left;
+}
+.cou-box ul li {
+    margin: 10px 0
+}
+/*button to move to sub course*/
+.button1 {
+    background-color:blue;
+    color: white;
+    font-size: 100%;
+    border-radius: 10px;
+    border: 0px;
+    width: 150px;
+    height: 40px;
+}
+/*button hover*/
+.button1:hover{
+    background-color:  rgb(3, 3, 162);
+    text-decoration: underline;
+}
+/*name of course*/
+.basic-course {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+/*types of courses*/
+.course-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px 0;
+}
+/*styling types of couses boxes*/
+.intro-box {
+    width: 250px;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    cursor: pointer;
+    border: 2px solid black;
+}
+/*styling types of couses boxes when hover */
+.intro-box:hover {
+    transform: scale(1.15);
+}
+/*heading of types of coures*/
+.intro-box h2 {
+    color: rgb(0, 0, 0);
+}
+/*topic of course*/
+.intro-box h3 {
+    color: rgb(25, 25, 25);
+    margin: 20px;
+}
+/*description of the course*/
+.intro-box p {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+/*styling descrption when hover*/
+.intro-box:hover p {
+    opacity: 1;
+}
+/*course button*/
+#course-button {
+    background-color:blue;
+    color: white;
+    font-size: 100%;
+    border-radius: 10px;
+    border: 0px;
+    width: 150px;
+    height: 40px;
+}
+/*course button hover*/
+#course-button:hover {
+    background-color:  rgb(3, 3, 162);
+    text-decoration: underline;
+}
+/*resource heading*/
+.resources {
+    font-size: 150%;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-decoration: underline;
+}
+/*resource box*/
+.resources-types {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+    column-gap: 150px;
+    padding: 40px;
+}
+/*resource box content*/
+.resource {
+    background-color: rgb(245, 245, 245);
+    border: 2px solid rgb(204, 204, 204);
+    border-radius: 30px;
+    padding: 20px;
+    height: 350px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.5);
+}
+/*resource box image*/
+.resource img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+/*style o hover of resouce box*/
+.resource:hover {
+    transform: scale(1.015);
+}
+/*describtion of resource*/
+.resource h2 {
+    font-weight: lighter;
+}
+/*contact us */
+.contact-us {
+    font-size: 150%;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-decoration: underline;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+footer a {
+    color: #1E90FF;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
